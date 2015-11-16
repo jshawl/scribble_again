@@ -1,6 +1,6 @@
 <h2>Add a comment to. . .</h2>
 
-<%= form_for @comment do |f| %>
+<%= form_for [@post, @comment] do |f| %>
 
 <p>
   <%= f.label :title %>
