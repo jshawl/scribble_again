@@ -2,7 +2,11 @@
 
 1. am i defining the relationship correctly between :posts and :comments resources?
 
+Very close! You needed a `post_id` column in your comments table - https://github.com/jshawl/scribble_again/compare/d267dcc...57d64d2
+
 2. unable to create comments to add to posts.  I'm getting an ArgumentError related to the form I'm using.
+
+I recommend using seeds to start solving this problem. I was able to fix the argument error in this commit https://github.com/jshawl/scribble_again/commit/05d464d
 
   <%= form_for @comment do |f| %>
     ...
