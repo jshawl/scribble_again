@@ -1,0 +1,17 @@
+<h2>Add a comment to <%= @post.title %></h2>
+
+<%= form_for new_post_comment_path do |f| %>
+
+<p>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</p>
+
+<p>
+  <%= f.label :text %>
+  <%= f.text_field :text %>
+</p>
+
+  <%= f.submit %>
+
+<% end %>
